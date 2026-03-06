@@ -1,0 +1,26 @@
+# ==============================
+# 500 USER PCQ
+# ==============================
+
+/queue type
+add name="PCQ-DL-500U" kind=pcq pcq-rate=10M pcq-classifier=dst-address pcq-limit=80KiB pcq-total-limit=8000KiB pcq-burst-rate=20M pcq-burst-threshold=12M pcq-burst-time=10s
+
+add name="PCQ-UL-500U" kind=pcq pcq-rate=10M pcq-classifier=src-address pcq-limit=80KiB pcq-total-limit=8000KiB pcq-burst-rate=20M pcq-burst-threshold=12M pcq-burst-time=10s
+
+
+# ==============================
+# 1000 USER PCQ
+# ==============================
+
+add name="PCQ-DL-1K" kind=pcq pcq-rate=10M pcq-classifier=dst-address pcq-limit=100KiB pcq-total-limit=20000KiB pcq-burst-rate=20M pcq-burst-threshold=12M pcq-burst-time=10s
+
+add name="PCQ-UL-1K" kind=pcq pcq-rate=10M pcq-classifier=src-address pcq-limit=100KiB pcq-total-limit=20000KiB pcq-burst-rate=20M pcq-burst-threshold=12M pcq-burst-time=10s
+
+
+# ==============================
+# 1500 USER PCQ
+# ==============================
+
+add name="PCQ-DL-1.5K" kind=pcq pcq-rate=10M pcq-classifier=dst-address pcq-limit=120KiB pcq-total-limit=30000KiB pcq-burst-rate=20M pcq-burst-threshold=12M pcq-burst-time=10s
+
+add name="PCQ-UL-1.5K" kind=pcq pcq-rate=10M pcq-classifier=src-address pcq-limit=120KiB pcq-total-limit=30000KiB pcq-burst-rate=20M pcq-burst-threshold=12M pcq-burst-time=10s
